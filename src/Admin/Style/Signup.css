@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-color: #f9f9f9; 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    margin: 0 10px; 
+    margin-bottom:20px
+}
+
+/* SignUp card styling */
+.signup-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust width as needed */
+    text-align: center; /* Center align text */
+}
+
+.signup-card h1 {
+    font-size: 24px;
+    color: black; /* Dark gray text color */
+    margin-bottom: 30px;
+}
+
+.signup-card form {
+    width: 100%;
+}
+
+/* Input styling */
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"] {
+    width: calc(100% - 30px); /* Adjusted width to accommodate padding */
+    padding: 15px;
+    border: 2px solid #ddd;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.4s ease;
+    font-size: 16px;
+}
+
+.signup-card input[type="text"]::placeholder,
+.signup-card input[type="email"]::placeholder,
+.signup-card input[type="password"]::placeholder {
+    color: #999; /* Light gray placeholder text color */
+}
+
+.signup-card input[type="text"].error,
+.signup-card input[type="email"].error,
+.signup-card input[type="password"].error {
+    border-color: #ff0000; /* Red border color for error */
+}
+
+.signup-card input[type="text"]:focus,
+.signup-card input[type="email"]:focus,
+.signup-card input[type="password"]:focus {
+    border-color: #b33771; /* Soft pink color on focus */
+}
+
+/* Button styling */
+.signup-card button {
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px; /* Added margin between button and textboxes */
+}
+
+.signup-card button:hover {
+    background-color: #992552; /* Darker pink color on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff0000; /* Red color for error message */
+    text-align: center;
+    margin-top: 10px;
+}

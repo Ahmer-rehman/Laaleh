@@ -1,0 +1,74 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 10px 20px; /* Increase padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Logo */
+.logo {
+  width: 60px; /* Reduce logo size for better proportion */
+  margin-right: 10px; /* Adjust margin for better alignment */
+}
+
+/* CMS Heading */
+.cms-heading {
+  font-size: 20px; /* Slightly reduce font size for better fit */
+}
+
+/* Nav Item */
+.nav-item {
+  margin: 0 10px; /* Increase spacing between items */
+  padding: 8px 16px; /* Adjust padding for better click area */
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  font-size: 16px; /* Adjust font size for better readability */
+  font-weight: bold; /* Make text bold for emphasis */
+}
+
+.nav-item:hover {
+  background-color: #333; /* Darken background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: static; /* Remove fixed positioning for mobile */
+    box-shadow: none; /* Remove shadow for mobile */
+  }
+
+  .top-bar {
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+
+  .logo {
+    width: 40px; /* Reduce logo size for mobile */
+  }
+
+  .cms-heading {
+    display: none; /* Hide CMS Heading on mobile */
+  }
+
+  .nav-item {
+    margin: 0 5px; /* Reduce spacing between items for mobile */
+    padding: 5px 10px; /* Adjust padding for mobile */
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+}

@@ -1,0 +1,275 @@
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Login card styling */
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust width as needed */
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+}
+
+.logo {
+  width: 100px; /* Adjust width as needed */
+  margin: 0 10px; /* Set margin between logos */
+}
+
+
+/* .login-card img.logo {
+  display: flex;
+  width: 150px;
+  margin: 0 auto 30px; /* Center logo and add space below */
+ */
+
+.login-card h1 {
+  font-size: 24px;
+  color: black; 
+  margin-bottom: 30px;
+}
+
+.login-card form {
+  width: 100%;
+}
+
+/* Input styling */
+.login-card input[type="email"],
+.login-card input[type="password"] {
+  width: calc(100% - 30px); /* Adjusted width to accommodate padding */
+  padding: 15px;
+  border: 2px solid #ddd;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  outline: none;
+  color:black;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+  margin-right: 15px; /* Added margin between textboxes */
+}
+
+.login-card input[type="email"]::placeholder,
+.login-card input[type="password"]::placeholder {
+  color: #999; /* Light gray placeholder text color */
+}
+
+.login-card input[type="email"]:focus,
+.login-card input[type="password"]:focus {
+  border-color: #b33771; /* Soft pink color on focus */
+}
+
+/* Button styling */
+.login-card button {
+  padding: 15px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.login-card button:hover {
+  background-color: #992552; 
+}
+
+/* Google button styling */
+.google_btn {
+  background-color: #4285f4; /* Blue color for Google button */
+  color: #fff;
+  padding: 15px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px; /* Added margin between Google button and other elements */
+}
+
+.google-login-button:hover {
+  background-color: #2a66d9; /* Darker blue color on hover */
+}
+
+/* Additional styling for links */
+.login-card a {
+  text-decoration: none;
+  color: #b33771; /* Soft pink color */
+  transition: color 0.3s ease;
+}
+
+.login-card a:hover {
+  color: #922443; /* Darker pink color on hover */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .login-card {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-card {
+    padding: 20px;
+  }
+  
+  .login-card h1 {
+    font-size: 20px;
+  }
+  
+  .login-card input[type="email"],
+  .login-card input[type="password"] {
+    padding: 12px;
+    width: calc(100% - 24px); /* Adjusted width to accommodate padding */
+    margin-right: 0; /* Removed right margin for smaller screens */
+  }
+  
+  .login-card button,
+  .google-login-button {
+    padding: 12px 0;
+    font-size: 16px;
+    margin-top: 20px; /* Adjusted margin for smaller screens */
+  }
+}
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Login card styling */
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust width as needed */
+}
+
+.login-card img.logo {
+  display: block;
+  width: 100px;
+  margin: 0 auto 30px; /* Center logo and add space below */
+}
+
+.login-card h1 {
+  font-size: 24px;
+  color: #333; /* Dark gray text color */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-card form {
+  width: 100%;
+}
+
+/* Input styling */
+.login-card input[type="email"],
+.login-card input[type="password"] {
+  width: calc(100% - 30px); /* Adjusted width to accommodate padding */
+  padding: 15px;
+  text-align: center; /* Centered text in textboxes */
+  border: 2px solid #ddd;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.4s ease;
+  font-size: 16px;
+}
+
+.login-card input[type="email"]::placeholder,
+.login-card input[type="password"]::placeholder {
+  color: #999; /* Light gray placeholder text color */
+}
+
+.login-card input[type="email"].error,
+.login-card input[type="password"].error {
+  border-color: #ff0000; /* Red border color for error */
+}
+
+.login-card input[type="email"]:focus,
+.login-card input[type="password"]:focus {
+  border-color: #b33771; /* Soft pink color on focus */
+}
+
+/* Button styling */
+.login-card button {
+  background-color: #b33771;
+  color: #fff;
+  padding: 15px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px; /* Added margin between button and textboxes */
+}
+
+.login-card button:hover {
+  background-color: #992552; /* Darker pink color on hover */
+}
+
+/* Google button styling */
+.login-card button.google_btn {
+  background-color: #4285f4; /* Blue color for Google button */
+  color: #fff;
+  padding: 15px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px; /* Added margin between Google button and other elements */
+}
+
+.login-card button.google_btn:hover {
+  background-color: #2a66d9; /* Darker blue color on hover */
+}
+
+/* Additional styling for links */
+.login-card a {
+  text-decoration: none;
+  color: #b33771; /* Soft pink color */
+  transition: color 0.3s ease;
+}
+
+.login-card a:hover {
+  color: #922443; /* Darker pink color on hover */
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff0000; /* Red color for error message */
+  text-align: center;
+  margin-top: 10px;
+}

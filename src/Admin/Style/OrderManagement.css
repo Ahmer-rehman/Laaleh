@@ -1,0 +1,130 @@
+/* OrderManagement.css */
+
+.order-management {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -41px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.order-management h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.orders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pending-orders,
+.completed-orders {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pending-orders h2,
+.completed-orders h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    display: flex; /* Display items in column layout */
+    flex-direction: column; /* Set flex-direction to column */
+}
+
+.order-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.order-item button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.order-item button:hover {
+    background-color: #45a049;
+}
+
+.completed-orders {
+    opacity: 0.8; /* Decrease opacity for completed orders */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    color: #333;
+}
+
+.modal-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-header button:hover {
+    color: #f44336;
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+}
+
+.order-details img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
